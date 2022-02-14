@@ -144,6 +144,7 @@ Conventions are classified in different _types_ which may be extended or overrid
   | `eg2.vscode-npm-script` | npm support for VS Code |
   | `abhijoybasak.npm-audit` | View npm audit security report in visual format |
   | `christian-kohler.npm-intellisense` | Visual Studio Code plugin that autocompletes npm modules in import statements. |
-  | `mskelton.npm-outdated` | Help highlighting outdated packages. |
+  | `mskelton.npm-outdated` | Helps highlighting outdated packages. |
+  | `vivaxy.vscode-conventional-commits` | Helps follow conventional commits in vscode |
 
   </details>

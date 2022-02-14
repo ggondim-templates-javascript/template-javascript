@@ -6,6 +6,7 @@ module.exports = {
     '/dist/**/*',
     '/**/*.test.js',
     '/node_modules/**/*',
+    '.eslintrc.js',
   ],
   env: {
     es6: true,
@@ -14,12 +15,19 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  plugins: ['import'],
+  plugins: [
+    'import',
+    'eslint-comments',
+  ],
   extends: [
     'airbnb-base',
+    'plugin:eslint-comments/recommended',
   ],
   parserOptions: {
     ecmaVersion: 2022,
+  },
+  globals: {
+    "console": process.env.NODE_ENV === 'development' ? 'readonly' : 'off',
   },
   rules: {
     strict: 'off',
